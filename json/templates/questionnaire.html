@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TB Prediction Questionnaire</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">TB Prediction Questionnaire</h1>
+        <form action="/" method="post">
+            {% for i in range(questions|length) %}
+            <div class="question-container">
+                <label for="question_{{i}}">{{ questions[i].question }}</label>
+                <select id="question_{{i}}" name="question_{{i}}" required>
+                    {% for option in questions[i].options %}
+                    <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% endfor %}
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

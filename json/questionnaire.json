@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "In your country, how many specialist surgical workforce per 100,000 population are there on average?",
+      "options": ["Below 40%", "Above 40%"]
+    },
+    {
+      "question": "Based on the average percentage of population affected by communicable diseases and maternal, prenatal, and nutrition conditions, how would you rate the health situation?",
+      "options": ["Good (Below 22.3%)", "Poor (Above 22.3%)"]
+    },
+    {
+      "question": "In your country, how much fertilizer (in kilograms) is consumed on average per hectare of arable land?",
+      "options": ["Low Usage (Below 140 kg)", "High Usage (Above 140 kg)"]
+    },
+    {
+      "question": "Considering the average number of agricultural machinery (tractors) per 100 square kilometers of arable land, how advanced is the agricultural sector?",
+      "options": ["Low Advancement (Below 200)", "High Advancement (Above 200)"]
+    },
+    {
+      "question": "What percentage of total employment is in agricultural employment on average?",
+      "options": ["Not Recent (Below 25%)", "Very Recent (Above 25%)"]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
