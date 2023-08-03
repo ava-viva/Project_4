@@ -29,7 +29,8 @@ To predict TB occurrence, we evaluated the performance of multiple machine learn
 
 **#Model Performance**
 After evaluating the models, we found that the Neural Network (NN) exhibited the highest accuracy in predicting TB occurrence from the given features.
-#Prediction and User Interface
+
+**#Prediction and User Interface**
 Using the trained Neural Network model, we made predictions on new data. To provide a user-friendly interface for exploring and visualizing the predicted results, we developed an HTML/Flask app. This app allows users to input data and view the predicted outcomes.
 
 **#Conclusion**
