@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tuberculosis Risk Prediction</title>
+    <style>
+      html, body {
+      min-height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: seagreen;
+        }
+      h1 {
+      margin: 0 0 20px;
+      font-weight: 400;
+      color: seagreen;
+      }
+      label {
+      margin: 0 0 0px;
+      font-weight: 50;
+      color: rgb(255, 136, 0);
+      font-size: 12px;
+      }
+      p {
+      margin: 0 0 5px;
+      }
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 75vh;
+      background-image: url("static/img/background image.jpg");
+    background-size: cover; /* Resize the background image to cover the entire container */
+  
+      }
+      form {
+      padding: 25px;
+      margin: 25px;
+      width: 50%;
+      box-shadow: 0 2px 5px #f5f5f5; 
+      background: #f5f5f5;
+      border: 2px solid seagreen;
+      border-radius: 7px;
+      }
+      input, textarea {
+      width: calc(50% - 18px);
+      padding: 7px;
+      margin-bottom: 20px;
+      border: 2px solid seagreen;
+      border-radius: 4px;
+      outline: none;
+      }
+      input::placeholder {
+      color: #666;
+      }
+      input {
+        display: block;
+      }
+      button {
+      width: 50%;
+      padding: 10px;
+      border: none;
+      border-radius: 7px;
+      background: seagreen; 
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      }
+      button:hover {
+      background: green;
+      }   
+      @media screen and (max-width: 600px) {
+      .main-block {
+      flex-direction: row;
+      }
+      }
+      .left-part, form {
+      width: 50%;
+      }
+      .result{
+        position: absolute;
+        visibility: visible;
+        top: 50%;
+        right: 25%;
+        width: 15%;
+        height: 35%;
+        border: 3px solid seagreen;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px #f5f5f5;
+        text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+      </div>
+      <form action="{{ url_for('predict')}}" method="post">
+        <section>
+        <center><h1><b>Tuberculosis Risk Prediction</b></h1></center>
+        <p>This Web Application is processed by a Machine Learning Algorithm to predict probability of an individual having Tuberculosis in each country. </p>
+        <p><i>Note that this model is 86% accurate</i></p>
+        <div class="info">
+        	  <p><b>Please Enter values for the following:</b></p><br>
+            <label><i>HINT: What is the percentage of the population with access to clean fuels and technologies for cooking?</i></label>
+         <input type="number" name="Fuel Access" placeholder="Fuel Access" required>
+          <label><i>HINT: What is the percentage of renewable energy consumption out of the total final energy consumption? </i></label>
+           <input type="number" name="Renewable energy consumption" placeholder="Renewable energy consumption" required>
+           <label><i>HINT: What percentage of the total employment is in the agricultural sector?</i></label>
+           <input type="number" step=0.01 name="Agricultural employment" placeholder="Agricultural employment" required>
+           <label><i>HINT: What is the percentage of the current health expenditure services? </i></label>
+           <input type="number" step=0.01 name="Health expenditure" placeholder="Health expenditure" required>
+           <label><i>HINT: How many physicians are available per 1,000 people? </i></label>
+           <input type="number" name="Health workers Physicians" step=0.01 placeholder="Health workers Physicians" required>
+           <label><i>HINT: What percentage of the total population is affected by droughts and extreme temperatures? </i></label>
+           <input type="number" name="Impact Population" step=0.01 placeholder="Impact Population" required>
+           <label><i>HINT: What percentage of the total population lives in rural areas? </i></label>
+           <input type="number" name="Rural population" step=0.001 placeholder="Rural population" required>
+        </div>
+        <center><button type="submit">Predict</button></center>
+        <div class = "result">
+            <h2>Result</h2>
+            <p>{{result}}</p>
+        </div>
+        </section>
+      </form>
+          <footer>
+              <p><i>Developed By bootcamp group </i></p>
+    </footer>
+  </body>
+</html>
