@@ -1,10 +1,11 @@
 # Tuberculosis Prediction using Machine Learning
-**#Introduction**
-In our previous project, we focused on visualizing the worldwide trend of Tuberculosis (TB). Now, we are taking our research a step further with this new project. The primary objective of this project is to detect crucial features from diverse datasets that can be utilized to predict TB occurrence in different countries.
-Tuberculosis (TB) is an infectious disease caused by Mycobacterium tuberculosis, primarily affecting the lungs. Its incidence in countries is influenced by various factors. The health system's quality and accessibility play a critical role in early detection, diagnosis, and treatment. Access to clean water and proper sanitation is vital, as poor water quality can increase susceptibility to TB. Climate conditions, such as cold and damp environments, can promote TB transmission, and climate change may exacerbate the issue. Health factors like malnutrition and weakened immune systems due to conditions like HIV/AIDS elevate the risk of TB. Additionally, overcrowded living conditions and poor ventilation facilitate bacterial transmission. Effectively addressing TB requires a comprehensive approach considering medical and social determinants of health.
 
 ![Tuberculosis](https://github.com/ava-viva/Project_4/assets/53435881/ce5f7ffe-ac8e-4655-9c9a-1d48b8dfa1a2)
 
+
+**#Introduction**
+In our previous project, we focused on visualizing the worldwide trend of Tuberculosis (TB). Now, we are taking our research a step further with this new project. The primary objective of this project is to detect crucial features from diverse datasets that can be utilized to predict TB occurrence in different countries.
+Tuberculosis (TB) is an infectious disease caused by Mycobacterium tuberculosis, primarily affecting the lungs. Its incidence in countries is influenced by various factors. The health system's quality and accessibility play a critical role in early detection, diagnosis, and treatment. Access to clean water and proper sanitation is vital, as poor water quality can increase susceptibility to TB. Climate conditions, such as cold and damp environments, can promote TB transmission, and climate change may exacerbate the issue. Health factors like malnutrition and weakened immune systems due to conditions like HIV/AIDS elevate the risk of TB. Additionally, overcrowded living conditions and poor ventilation facilitate bacterial transmission. Effectively addressing TB requires a comprehensive approach considering medical and social determinants of health.
 
 **#Dataset**
 For this project, we have used the World Development Indicators dataset available on Kaggle. The dataset contains various indicators by countries, including emissions data. You can access the dataset at the following link: World Development Indicators by Countries.
